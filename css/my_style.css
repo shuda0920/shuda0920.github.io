@@ -13,3 +13,13 @@ body {
     text-transform: none;
 
 }
+
+a.link{
+    color:greenyellow;
+    background-color: rebeccapurple;
+}
+
+a. :hover{
+    color: #242424;
+    
+}
