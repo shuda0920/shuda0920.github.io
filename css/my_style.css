@@ -23,6 +23,11 @@ a:hover{
     color: #242424;
     
 }
+
 .cover {
     color: #343a40;
+}
+.cover:hover{
+    background-color: #eb7b0b;
+    color: aliceblue;
 }
