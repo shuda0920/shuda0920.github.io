@@ -14,12 +14,15 @@ body {
 
 }
 
-a.link{
+a:link{
     color:greenyellow;
     background-color: rebeccapurple;
 }
 
-a. :hover{
+a:hover{
     color: #242424;
     
+}
+.cover {
+    color: #343a40;
 }
