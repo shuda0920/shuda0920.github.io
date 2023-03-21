@@ -14,7 +14,7 @@ body {
 
 }
 
-.coolmail :link{
+.coolmail {
     color:greenyellow;
     background-color: rebeccapurple;
 }
@@ -28,6 +28,6 @@ body {
     color: #343a40;
 }
 .pic:hover{
-    background-color: #eb7b0b;
-    color: aliceblue;
+    background-color: aliceblue;
+    color: #eb7b0b;
 }
