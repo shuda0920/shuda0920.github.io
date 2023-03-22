@@ -24,10 +24,10 @@ body {
 
 
 .expedu_icon:hover {
-    color: var(--bs-secondary);
+    color:var(--bs-secondary);
 }
 a{
-    color: var(--bs-primary);
+    color:var(--bs-primary);
 }
 
 .social-icons .social-icon :hover {
