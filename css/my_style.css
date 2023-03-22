@@ -15,8 +15,6 @@ body {
 
 
 
-
-
 :root {
   --bs-primary:#0e8a00;
   --bs-primary-rgb: 14,138,0;
@@ -31,7 +29,7 @@ body {
 a{
     color: var(--bs-primary);
 }
-    
+
 .social-icons .social-icon :hover {
     background-color: var(--bs-secondary);
 }
