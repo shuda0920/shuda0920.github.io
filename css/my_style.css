@@ -11,18 +11,9 @@ body {
 .subheading{
     font-family: 'Noto Sans TC',sans-serif;
     text-transform: none;
-
 }
 
-.coolmail {
-    color:greenyellow;
-    background-color: rebeccapurple;
-}
 
-.coolmail :hover{
-    color: #242424;
-    
-}
 
 
 
@@ -30,11 +21,11 @@ body {
   --bs-primary:#0e8a00;
   --bs-primary-rgb: 12,25,145;
   --bs-secondary:#00ccff;
-  --bs-secondary-rgb:23,15,180
+  --bs-secondary-rgb:23,15,180;
 }
 
 
-.expedu_icon: hover {
+.expedu_icon:hover {
     color: var(--bs-secondary);
 }
 a{
@@ -42,7 +33,7 @@ a{
 }
     
 .social-icons .social-icon :hover {
-    background-color: var (--bs-secondary);
+    background-color: var(--bs-secondary);
 }
 
 
