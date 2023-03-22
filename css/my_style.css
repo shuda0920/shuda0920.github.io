@@ -26,6 +26,7 @@ body {
 .expedu_icon:hover {
     color:var(--bs-secondary);
 }
+
 a{
     color:var(--bs-primary);
 }

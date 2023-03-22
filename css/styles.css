@@ -34,7 +34,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #bd5d38;
-  --bs-secondary: #00ccff;
+  --bs-secondary: rgb(0, 204, 255);
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -236,13 +236,6 @@ sup {
   top: -0.5em;
 }
 
-a {
-  color: #bd5d38;
-  text-decoration: underline;
-}
-a:hover {
-  color: #974a2d;
-}
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
