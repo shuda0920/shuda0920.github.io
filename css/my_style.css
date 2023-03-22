@@ -24,10 +24,35 @@ body {
     
 }
 
-.pic {
-    color: #343a40;
+
+
+root:{
+  --bs-primary:#0e8a00;
+  --bs-primary-rgb: 12,25,145;
+  --bs-secondary:#00ccff;
+  --bs-secondary-rgb:23,15,180
 }
-.pic:hover{
-    background-color: aliceblue;
-    color: #eb7b0b;
+
+
+.expedu_icon: hover {
+    color: var(--bs-secondary);
 }
+a{
+    color: var(--bs-primary);
+}
+    
+.social-icons .social-icon :hover {
+    background-color: var (--bs-secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
