@@ -26,7 +26,7 @@ body {
 
 
 
-root:{
+:root {
   --bs-primary:#0e8a00;
   --bs-primary-rgb: 12,25,145;
   --bs-secondary:#00ccff;
