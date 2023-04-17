@@ -41,7 +41,8 @@ a{
 }
 
 td{
-    border-bottom: 2px solid #525252;
+    border-bottom: 1px solid #525252;
+    padding: 15px;
 }
 
 
