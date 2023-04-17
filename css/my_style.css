@@ -40,7 +40,11 @@ a{
    
 }
 
+th{
+    font-size: 20px;
+}
 td{
+    font-size: 20px;
     border-bottom: 1px solid #525252;
     padding: 20px;
 }
