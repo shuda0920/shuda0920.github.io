@@ -37,13 +37,12 @@ a{
 
 .list_color {
     color:#00ccff;
-    font-size: 20px;
+    font-size: 10px;
 }
 
-tr{
+th{
     border-bottom: 3px solid #525252;
 }
-
 
 
 
