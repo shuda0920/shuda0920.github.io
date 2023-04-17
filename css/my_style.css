@@ -35,6 +35,11 @@ a{
     background-color: var(--bs-secondary);
 }
 
+.list_color {
+    color:#00ccff;
+    font-size: 50px;
+}
+
 
 
 
