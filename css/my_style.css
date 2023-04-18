@@ -40,10 +40,7 @@ a{
    
 }
 
-th{
-    font-size: 30px;
-}
-td{
+.line_{
     font-size: 30px;
     border-bottom: 1px solid #525252;
     padding: 10px;
