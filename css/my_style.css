@@ -45,15 +45,15 @@ a{
 }
 
 .cont{
-    position: fixed;
+    position: ;
     padding: 50px;
     color: rgb(188, 188, 188);
     background-color:rgba(0, 0, 0, 0.5);
-    bottom: 0;
+    
 }
 
 #md{
-    position: fixed;
+    position: ;
     min-width:100%;
     min-height: 100%;
 
