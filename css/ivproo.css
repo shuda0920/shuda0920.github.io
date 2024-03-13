@@ -1,17 +1,4 @@
+video{
+    width: 500px;
 
-
-@media only screen and(min-width:375px) and(max-width:812px){
-    img {
-        max-width: 100%; /* 圖片寬度佔滿父元素 */
-        height: auto; /* 根據寬度自動調整高度 */
-        position: relative; /* 設置相對位置 */
-        top: 20px; /* 距離頂部20px */
-        left: 10px; /* 距離左側10px */
-      }
-
-      video{
-        max-width:100%;
-        height:auto;
-    
-    }
 }
