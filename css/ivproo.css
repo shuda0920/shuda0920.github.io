@@ -2,7 +2,7 @@
 
 @media only screen and(max-width:600px){
     img {
-        width: auto; /* 圖片寬度佔滿父元素 */
+        max-width:100%; /* 圖片寬度佔滿父元素 */
         height: auto; /* 根據寬度自動調整高度 */
         position: relative; /* 設置相對位置 */
         top: 20px; /* 距離頂部20px */
@@ -10,7 +10,7 @@
       }
 
       video{
-        width: auto;
+        max-width:100%;
         height:auto;
     
     }
