@@ -1,6 +1,6 @@
 
 
-@media only screen and(max-width:600px){
+@media only screen and(min-width:375px) and(max-width:812px){
     img {
         width:300px; /* 圖片寬度佔滿父元素 */
         height: 150px; /* 根據寬度自動調整高度 */
