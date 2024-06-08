@@ -60,8 +60,8 @@ a{
 }
 
 .videow{
-    height: 290px;
-    width: 380px;
+    height:400px;
+    width: 600px;
 }
 
 
@@ -90,8 +90,35 @@ a{
         height:380px;
     }
     .nor{
-        height: 330px;
         width: 460px;
+        height: 330px;       
+    }
+    .videow{       
+        width: 600px;
+        height:400px;
+    }
+}
+@media(max-width:400px){
+    .picSmall{
+        width: 350px;
+        height: 350px;
+    }
+    .videow2{
+        width: 350px;
+        height:340px;
+    }
+    .nor{
+        width: 350px;
+        height: 240px;    
+    }
+    .videow{       
+        width: 340px;
+        height:180px;
+    }
+    .picU img{
+        padding-top: 5px;
+        width: 340px;
+        height:280px;
     }
 }
 
