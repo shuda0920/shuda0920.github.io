@@ -70,12 +70,34 @@ a{
     height:400px;
 }
 
+
+.videow2{
+    height: 380px;
+    width: 600px;
+}
+.nor{
+    height: 400px;
+    width: 600px;
+}
+
 @media(max-width:992px){
     .picSmall{
-        width: 400px;
+        width: 455px;
         height: 350px;
     }
+    .videow2{
+        width: 420px;
+        height:380px;
+    }
+    .nor{
+        height: 340px;
+        width: 460px;
+    }
 }
+
+
+
+
 
 
 
