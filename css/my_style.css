@@ -45,7 +45,7 @@ a{
 }
 
 .cont{
-    position: ;
+    
     padding: 50px;
     color: rgb(188, 188, 188);
     background-color:rgba(0, 0, 0, 0.5);
@@ -53,7 +53,7 @@ a{
 }
 
 #md{
-    position: ;
+    
     min-width:100%;
     min-height: 100%;
 
