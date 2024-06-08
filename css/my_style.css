@@ -112,13 +112,16 @@ a{
         height: 240px;    
     }
     .videow{       
-        width: 340px;
-        height:180px;
+        width: 350px;
+        height:240px;
     }
     .picU img{
         padding-top: 5px;
         width: 340px;
         height:280px;
+    }
+    .noTop{
+        padding-top: 0%;
     }
 }
 
