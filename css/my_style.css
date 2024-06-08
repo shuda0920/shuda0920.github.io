@@ -80,17 +80,17 @@ a{
     width: 600px;
 }
 
-@media(max-width:992px){
+@media(max-width:1200px){
     .picSmall{
-        width: 455px;
+        width: 450px;
         height: 350px;
     }
     .videow2{
-        width: 420px;
+        width: 410px;
         height:380px;
     }
     .nor{
-        height: 340px;
+        height: 330px;
         width: 460px;
     }
 }
