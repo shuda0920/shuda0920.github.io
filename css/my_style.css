@@ -124,16 +124,181 @@ a{
         padding-top: 0%;
     }
 }
+.flexy{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  
+.gridcon{
+    
+    display :grid;
+    background-color:rgba(200, 200,200,0);
+    grid-template-columns: 40% 27% 27%;
+    padding: 0%;
+    height: 100%;
+    width: 78%;
+    grid-gap: 34px;
+}
+.layout{
+   background-color: rgb(255, 193, 7);
+   padding: 145px; 
+}
+
+
+.line_itme1{
+    grid-column: 1;
+    grid-row:1/span 2 ;
+}
+.line_itme1{
+    padding: 13%;
+    border: 3px solid rgb(255, 193, 7);
+    border-radius: 25px;
+    font-weight: bolder;
+}
+.line_itme2{
+    position: relative;
+    background-image: url('css_img/line_費溫室.png');
+    background-size: 100% 100%;
+    line-height: 120px;
+    border-radius: 25px;
+    border: 3px solid rgb(255, 193, 7);
+}
+
+.line_itme3{
+    position: relative;
+    background-image: url("css_img/line_福彰.png");
+    background-size: 100% 100%;
+    line-height: 120px;
+    border-radius: 25px;
+    border: 3px solid rgb(255, 193, 7);
+}
+
+.line_itme4{
+    position: relative;
+    background-image: url("css_img/line_spido.png");
+    background-size: 100% 100%;
+    line-height: 120px;
+    border-radius: 25px;
+    border: 3px solid rgb(255, 193, 7);
+}
+
+.line_itme5{
+    position: relative;
+    background-image: url("css_img/line_融合.png");
+    background-size: 100% 100%;
+    line-height: 120px;
+    border-radius: 25px;
+    border: 3px solid rgb(255, 193, 7);
+}
 
 
 
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(75, 75, 75, 0.5); /* 半透明塗層 */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-family: "Source Han Sans", "Noto Sans CJK", 思源黑體, Arial, sans-serif;
+    font-weight: 900;
+    color:rgb(255, 195, 15);
+  
+    
+}
 
+.no{
+    padding: 0%;
+    margin: 0%;
+    
+}
 
+.no :hover .overlay{
+    opacity: 1;
+}
 
+.link_sty a {
+    padding: 8px;
+    color: rgb(255, 193, 7);
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 25px;
+    transition: transform 0.5 ease-in-out;
+}
 
+.link_sty{
+    padding: 10px;
+    
+}
 
+.link_sty a:hover {
+    color: black;
+    background-color: rgb(252, 252, 252);
 
+}
 
-
-
+@media(max-width:400px){
+    .gridcon{
+    
+        display :grid;
+        background-color:rgba(200, 200,200,0);
+        grid-template-columns: auto;
+    }
+    .line_itme1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .link_sty a {
+        padding: 5px;
+        color: rgb(255, 193, 7);
+        text-decoration: none;
+        font-size: 17px;
+        background-color: rgb(73, 73, 73);
+        border-radius: 25px;
+        transition: transform 0.5 ease-in-out;
+    }
+    
+    .link_sty{
+        padding: 5px;
+        
+    }
+    
+    .link_sty a:hover {
+        color: black;
+        background-color: rgb(252, 252, 252);
+    
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(75, 75, 75, 0.5); /* 半透明塗層 */
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+        display: flex;
+        border-radius: 25px;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-family: "Source Han Sans", "Noto Sans CJK", 思源黑體, Arial, sans-serif;
+        font-weight: 900;
+        color:rgb(255, 195, 15);
+      
+        
+    }
+    
+}
