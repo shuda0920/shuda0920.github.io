@@ -1,0 +1,337 @@
+/* ABOUT — editable source. */
+.hero-kicker {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  font-size: 9px;
+}
+.about-hero h1 {
+  font-family:
+    Impact,
+    "Arial Narrow",
+    sans-serif;
+  font-weight: 900;
+  font-stretch: condensed;
+  letter-spacing: -.055em;
+  font-size: clamp(80px, 15.9vw, 218px);
+  line-height: .94;
+  white-space: nowrap;
+}
+.hero-composition {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1.04fr .29fr;
+  gap: 24px;
+  align-items: center;
+  margin-top: -18px;
+}
+.hero-name {
+  padding-top: 25px;
+  z-index: 2;
+}
+.hero-name > span {
+  font-size: 12px;
+  letter-spacing: .23em;
+}
+.hero-name > em {
+  display: block;
+  font-size: clamp(50px, 6.2vw, 88px);
+  letter-spacing: -.06em;
+  line-height: 1.15;
+  margin: 8px 0 28px;
+  white-space: nowrap;
+}
+.hero-name p {
+  font-size: 22px;
+  line-height: 1.65;
+  color: var(--wine);
+  font-weight: 500;
+}
+.underlined {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 7px;
+  margin-top: 23px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: gap .2s;
+}
+.underlined:hover {
+  gap: 33px;
+}
+.portrait {
+  position: relative;
+  padding: 10px 10px 36px;
+  background: #e4ddc8;
+  transform: rotate(3deg);
+  box-shadow: 10px 15px 30px #480d1215;
+}
+.portrait > img {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+  object-position: 50% 35%;
+  display: block;
+}
+.portrait figcaption {
+  font: 8px Consolas, monospace;
+  letter-spacing: .09em;
+  padding-top: 13px;
+}
+.portrait-label {
+  position: absolute;
+  bottom: 59px;
+  left: -40px;
+  background: var(--wine);
+  color: var(--paper);
+  font-size: 12px;
+  padding: 20px 24px;
+  transform: rotate(-7deg);
+}
+.portrait-label em {
+  font-size: 26px;
+  display: block;
+}
+.hero-stamp {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.45;
+  align-self: end;
+  padding-bottom: 40px;
+}
+.hero-stamp > span {
+  font-size: 80px;
+  line-height: 1;
+  display: block;
+  margin-top: 22px;
+}
+.hero-foot {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  padding: 22px 0;
+  margin-top: 38px;
+  font-size: 9px;
+}
+.wine {
+  background: var(--wine);
+  color: var(--paper);
+  --muted:#d4bfb1;
+  --line:#f5f0dd33;
+}
+.intro {
+  padding: 85px 0;
+}
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr .85fr;
+  gap: 100px;
+}
+.intro h2 {
+  font-size: 42px;
+  line-height: 1.4;
+  letter-spacing: -.03em;
+  margin-bottom: 30px;
+}
+.intro h2 em {
+  font-family: inherit;
+  color: #d5b49b;
+}
+.intro p {
+  max-width: 550px;
+  margin-bottom: 19px;
+  font-size: 14px;
+}
+.intro-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 27px;
+}
+.intro-tags span {
+  font: 9px Consolas, monospace;
+  border: 1px solid #f5f0dd55;
+  padding: 9px 12px;
+}
+.mosaic {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+}
+.mosaic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  position: absolute;
+  inset: 0;
+}
+.tile-grid i {
+  border: 1px solid #480d1277;
+}
+.tile-grid i:nth-child(1),
+.tile-grid i:nth-child(4),
+.tile-grid i:nth-child(13),
+.tile-grid i:nth-child(15) {
+  background: var(--wine);
+}
+.tile-grid i:nth-child(8) {
+  background: #f5f0dd;
+}
+.education .eyebrow {
+  color: #c5a595;
+  margin-bottom: 15px;
+}
+.education h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.education p {
+  font-size: 12px;
+  margin: 6px 0 20px;
+}
+.education small {
+  font-size: 10px;
+  color: #c5a595;
+}
+.section-title {
+  margin-bottom: 40px;
+}
+.section-title h2 {
+  font-size: 32px;
+  line-height: 1.45;
+  font-weight: 500;
+  letter-spacing: -.04em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.section-title h2 em {
+  font-size: 29px;
+  letter-spacing: -.04em;
+  color: #9f8072;
+}
+.wine .section-title h2 em {
+  color: #c3a18e;
+}
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.skill {
+  padding: 30px 22px;
+  border-right: 1px solid var(--line);
+}
+.skill:first-child {
+  padding-left: 0;
+}
+.skill:last-child {
+  border: 0;
+  padding-right: 0;
+}
+.skill > span {
+  display: block;
+  font: 9px Consolas, monospace;
+  letter-spacing: .1em;
+  margin: 24px 0 10px;
+}
+.skill h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.skill p {
+  font-size: 12px;
+}
+.credentials {
+  padding-top: 0;
+}
+.cert-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.cert {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid var(--line);
+  padding: 24px;
+}
+.cert span {
+  font: 11px Consolas, monospace;
+}
+.cert h3 {
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+.cert p {
+  font-size: 11px;
+  margin-top: 7px;
+}
+.timeline article {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  border-top: 1px solid var(--line);
+  padding: 30px 0;
+  gap: 45px;
+}
+.timeline article:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.date {
+  padding-top: 7px;
+  color: #d4b5a2;
+}
+.timeline h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 9px;
+}
+.timeline h4 {
+  font-size: 13px;
+  color: #d9b99f;
+  margin-bottom: 16px;
+}
+.timeline p {
+  font-size: 13px;
+  max-width: 680px;
+}
+.pathways > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.pathways a {
+  display: block;
+  position: relative;
+  padding: 24px 0;
+  border-block: 1px solid var(--line);
+}
+.pathways a > span {
+  font: 12px Consolas, monospace;
+}
+.pathways h2 {
+  font-size: 25px;
+  margin: 18px 0 9px;
+  font-weight: 500;
+}
+.pathways a > svg {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+.pathways p {
+  font-size: 12px;
+}

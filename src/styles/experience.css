@@ -1,0 +1,58 @@
+/* Work experience: decorative transparent logos under a burgundy foreground. */
+.experience-list {
+  --experience-surface: #60151b;
+  --experience-logo-opacity: .36;
+  display: grid;
+  gap: 16px;
+}
+.timeline .experience-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(150px, .7fr) minmax(0, 2fr);
+  align-items: start;
+  gap: clamp(20px, 4vw, 64px);
+  padding: clamp(24px, 3vw, 42px);
+  border: 1px solid #f5f0dd26;
+  border-radius: 6px;
+  background: var(--experience-surface);
+}
+.experience-watermark {
+  position: absolute;
+  z-index: 0;
+  inset: 12% auto 12% 2%;
+  width: 37%;
+  height: 76%;
+  object-fit: contain;
+  filter: brightness(0);
+  opacity: var(--experience-logo-opacity);
+  pointer-events: none;
+  user-select: none;
+}
+.experience-tint {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(90deg, #60151b12 0%, #60151b66 32%, #60151bf2 65%);
+  pointer-events: none;
+}
+.experience-card .date, .experience-copy { position: relative; z-index: 2; min-width: 0; }
+.experience-card .date { font-size: 12px; line-height: 1.8; overflow-wrap: anywhere; }
+.experience-copy h3 { font-size: clamp(21px, 2.2vw, 28px); line-height: 1.5; overflow-wrap: anywhere; text-wrap: pretty; }
+.experience-copy h4 { font-size: 15px; line-height: 1.7; margin-top: 10px; }
+.experience-copy p { font-size: 15px; line-height: 1.95; color: #ead8ca; }
+.experience-copy .underlined { font-size: 14px; max-width: 100%; min-height: 44px; }
+@media (max-width: 700px) {
+  .timeline .experience-card { grid-template-columns: minmax(0, 1fr); gap: 18px; padding: 26px 22px; }
+  .experience-watermark { width: 65%; height: 62%; top: auto; bottom: 5%; left: -2%; opacity: .4; }
+  .experience-tint { background: linear-gradient(110deg, #60151b12, #60151b66 65%, #60151bb3); }
+  .experience-copy h3 { font-size: 22px; }
+  .experience-copy p { font-size: 15px; }
+  .experience-card .date { font-size: 12px; }
+}
+@media (max-width: 360px) {
+  .timeline .experience-card { padding: 22px 16px; }
+  .experience-copy h3 { font-size: 20px; }
+  .experience-copy .underlined { gap: 12px; }
+}

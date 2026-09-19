@@ -1,0 +1,18 @@
+/* CSS entry point; edit styles/, not css/portfolio.css. */
+@import 'tailwindcss';
+@import './styles/base.css';
+@import './styles/about.css';
+@import './styles/footer.css';
+@import './styles/works.css';
+@import './styles/preview.css';
+@import './styles/responsive.css';
+@import './styles/credentials.css';
+@import './styles/navigation.css';
+@import './styles/experience.css';
+@source './main.jsx';
+@source './components';
+@source './editorial-data.js';
+
+@import './styles/language.css';
+@source './i18n';
+@import './styles/line-watermark.css';

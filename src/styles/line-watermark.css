@@ -1,0 +1,10 @@
+/* User-supplied LINE artwork: screen blending makes its black background
+   visually transparent while preserving the speech bubble and letter cutouts. */
+.experience-watermark[src$="line-user.png"] {
+  filter: none;
+  mix-blend-mode: screen;
+  opacity: .16;
+}
+@media(max-width:700px) {
+  .experience-watermark[src$="line-user.png"] { opacity: .13; }
+}

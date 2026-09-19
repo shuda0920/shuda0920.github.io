@@ -1,0 +1,157 @@
+/* BASE — editable source. */
+:root {
+  font-family:
+    "Helvetica Neue",
+    "Arial",
+    "Microsoft JhengHei",
+    sans-serif;
+  color: #480d12;
+  background: #f5f0dd;
+  --paper:#f5f0dd;
+  --wine:#480d12;
+  --line:#480d122e;
+  --muted:#776058;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 105px;
+}
+body {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+button,
+a,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+}
+p {
+  line-height: 1.95;
+  color: var(--muted);
+  font-size: 14px;
+}
+svg {
+  flex-shrink: 0;
+}
+em {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+  font-weight: 400;
+}
+::selection {
+  background: var(--wine);
+  color: var(--paper);
+}
+.wrap {
+  width: min(1240px, calc(100% - 100px));
+  margin-inline: auto;
+}
+.section {
+  padding-block: 92px;
+}
+.eyebrow,
+.hero-kicker,
+.date,
+.hero-foot,
+.role > span,
+.category-label,
+.filter-bar > span {
+  font: 10px Consolas, monospace;
+  letter-spacing: .11em;
+}
+.eyebrow {
+  display: block;
+  margin-bottom: 20px;
+}
+.masthead {
+  height: 88px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: #f5f0ddf5;
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+.wordmark {
+  font: italic 38px Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+.wordmark > span {
+  font: 10px Arial;
+  vertical-align: top;
+  letter-spacing: 0;
+  margin-left: 6px;
+}
+.masthead nav {
+  display: flex;
+  gap: 36px;
+  height: 100%;
+  align-items: center;
+}
+.masthead nav a {
+  font-size: 13px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  position: relative;
+}
+.masthead nav small {
+  font: 9px Consolas, monospace;
+  color: #9b7a6d;
+}
+.masthead nav a[aria-current]:after {
+  content: "";
+  height: 3px;
+  background: var(--wine);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.masthead nav a:hover {
+  opacity: .7;
+}
+.header-mail {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}

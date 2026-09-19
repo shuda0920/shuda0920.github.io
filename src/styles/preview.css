@@ -1,0 +1,103 @@
+/* PREVIEW — editable source. */
+.preview-dialog {
+  border: 0;
+  padding: 28px;
+  background: var(--paper);
+  color: var(--wine);
+  max-width: 980px;
+  width: calc(100% - 50px);
+  max-height: 90dvh;
+  margin: auto;
+  overflow: auto;
+  box-shadow: 0 25px 100px #0006;
+}
+.preview-dialog::backdrop {
+  background: #200509bb;
+  backdrop-filter: blur(6px);
+}
+.dialog-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+.dialog-head .eyebrow {
+  font-size: 9px;
+  margin-bottom: 7px;
+}
+.dialog-head h2 {
+  font-size: 23px;
+}
+.dialog-head button {
+  padding: 8px;
+  background: none;
+  border: 1px solid var(--line);
+}
+.preview-content {
+  height: min(57vh, 520px);
+  background: #e4ddc8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preview-content iframe,
+.preview-content video {
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+.preview-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.preview-thumbs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+.preview-thumbs button {
+  height: 52px;
+  min-width: 60px;
+  border: 2px solid transparent;
+  padding: 3px;
+  background: #e4ddc8;
+  font-size: 11px;
+}
+.preview-thumbs button.selected {
+  border-color: var(--wine);
+}
+.preview-thumbs img {
+  height: 42px;
+  width: 60px;
+  object-fit: cover;
+}
+.preview-note {
+  font-size: 11px;
+}
+.preview-dialog > .underlined {
+  margin-top: 15px;
+}
+.skip {
+  position: fixed;
+  top: -80px;
+  background: var(--wine);
+  color: var(--paper);
+  z-index: 100;
+  padding: 15px;
+}
+.skip:focus {
+  top: 5px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

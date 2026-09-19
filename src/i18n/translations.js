@@ -1,0 +1,82 @@
+import {mediaWorks,techWorks,experience} from '../editorial-data.js';
+import {positioning} from './positioning.js';
+
+export const dictionary = {
+ '廣告企劃':'Advertising concepts',
+ '關於 Ryan':'About Ryan','影音與媒體創作':'Media & Storytelling','科技與 Web/App':'Tech & Web/App',
+ '主要導覽':'Main navigation','Ryan 首頁':'Ryan home','寄信給 Ryan':'Email Ryan','開啟主選單':'Open menu','關閉主選單':'Close menu',
+ '個人檔案導覽':'Profile navigation','自我介紹':'About me','專長技能':'Skills','專業證照':'Credentials','工作經歷':'Experience','收起個人導覽':'Collapse profile menu','展開個人導覽':'Expand profile menu',
+ '跳至主要內容':'Skip to main content','有想法，':'Have an idea?','一起聊聊。':"Let’s talk.",'回到頂端 ↑':'Back to top ↑','陳昱達':'Yu-Ta Chen',
+ '連結科技、影音與':'Connecting technology, stories','商業思維的實踐者':'and business through practice.','認識我':'Meet Ryan','好奇觀察，動手實作。':'Stay curious. Make things happen.',
+ '在不同領域之間，':'Across disciplines,','找到':'finding ','連結。':'connections.',
+ '我是陳昱達，現就讀國立臺灣科技大學數位學習與教育研究所碩士班，畢業於世新大學資訊傳播學系。':'I’m Ryan Chen, a master’s student in Digital Learning and Education at National Taiwan University of Science and Technology, with a bachelor’s degree in Information and Communications from Shih Hsin University.',
+ '我的實作橫跨 AI 產品原型、RAG 應用、使用者研究與影音敘事。從神通資訊的 AI 系統實驗，到 LINE FRESH 的地方探訪，我習慣先理解人的需求，再選擇合適的技術與表達方式。':'My work spans AI prototypes, RAG applications, user research, and visual storytelling. From AI experiments at MiTAC to local fieldwork with LINE FRESH, I start with people’s needs and then choose the right technology and medium.',
+ '希望把技術實作、內容創意與產品驗證放在一起，做出能被理解、也能被使用的數位體驗。':'I bring technical implementation, creative content, and product validation together to build digital experiences that people can understand and use.',
+ '國立臺灣科技大學':'National Taiwan University of Science and Technology','數位學習與教育研究所 · 碩士班':'Master’s program in Digital Learning and Education','2026 — 就讀中':'2026 — Present','世新大學':'Shih Hsin University','資訊傳播學系 · 學士':'B.A. in Information and Communications','互動程式設計班級第一名':'Ranked first in the Interactive Programming class',
+ '專長，不只一面。':'Three areas of practice.','把經驗，變成養分。':'Learning through experience.',
+ 'AI 與系統開發':'AI & Systems Development','專案企劃':'Project Planning','影音製作':'Video Production',
+ '整合 Python、Flutter 與 Web 技術，開發 AI 應用原型；運用 RAG、LLM、向量檢索及多代理人協作，把需求轉化為可驗證的系統。':'Building AI application prototypes with Python, Flutter, and web technologies. Applying RAG, LLMs, vector retrieval, and multi-agent collaboration to turn needs into testable systems.',
+ '從田野訪談、使用者研究與資料分析出發，梳理問題、規劃提案並協調團隊，串連文化、商業需求與可執行的專案內容。':'Using field interviews, user research, and analysis to frame problems, develop proposals, and coordinate teams—connecting cultural context and business needs with actionable plans.',
+ '從腳本發想、導演與拍攝到後期剪輯，運用 After Effects 與 Blender 完成動態和視覺表達，將抽象概念轉化為有敘事節奏的影像。':'From scriptwriting and directing to filming and post-production, using After Effects and Blender to translate abstract ideas into visual stories with rhythm and purpose.',
+ '相關作品':'Related work','Right Way · Flutter 旅遊 App':'Right Way · Flutter travel app','多代理人 RAG · 對話 MVP':'Multi-agent RAG · Conversational MVP','北一區性平教育中心 · 網站建置':'Gender Equity Center · Website',
+ '文化開解所 · 國際見習企劃':'Cultural Exchange · International proposal','景美集應廟 · 訪談與質性研究':'Jiying Temple · Qualitative research','LINE FRESH · 地方影音企劃':'LINE FRESH · Local storytelling','信託遊戲 · 編劇、導演與剪輯':'Trust Game · Writing, directing & editing','營火旁的惡鬥 · Blender 場景製作':'Campfire Clash · Blender scene',
+ '華影國際影藝 ·《96 分鐘》':'Hua Ying International · 96 Minutes','神通資訊 MITAC':'MiTAC Information Technology','AI 程式設計實習生':'AI Programming Intern','數位成長實習生':'Digital Growth Intern','宣傳貼紙發想與製作':'Promotional sticker concept & design','查看相關作品與紀錄':'View related work',
+ 'AI 應用規劃師 · 中級':'AI Application Planner · Specialist Level','AI 應用規劃師 · 初級':'AI Application Planner · Associate Level','2026 · 機器學習類':'2026 · Machine learning','2025 · 能力鑑定通過':'2025 · Certification passed','程式語言 Python 3':'Python 3 Programming','程式設計能力認證':'Programming certification','Python 3 網頁資料擷取與分析':'Web Data Extraction & Analysis with Python 3','資料蒐集與分析能力認證':'Data extraction & analysis certification','關閉證照':'Close certificate','查看證照':'View certificate','查看完整尺寸':'View full size','身分證字號與出生日期已遮蔽。':'National ID and date of birth are redacted.','正式證照，個資已遮蔽':' certificate, personal details redacted',
+ '用故事，讓人產生共鳴。':'Stories that connect with people.','用技術，讓想法真正運作。':'Technology that brings ideas to life.',
+ '從需求、資料到介面，把抽象想法轉化為可以操作的數位體驗。':'From needs and data to interfaces, turning abstract ideas into usable digital experiences.',
+ '從一個鏡頭、一場訪談到一份企劃，讓值得被理解的故事被看見。':'From a shot and an interview to a proposal, making stories worth understanding visible.',
+ '全部':'All','影音剪輯':'Video & Editing','實地探訪':'Fieldwork','國際合作企劃':'International Projects','視覺設計':'Visual Design','Web 開發':'Web Development','App 開發':'App Development','AI 與自動化專案':'AI & Automation','作品分類':'Project categories',
+ '我的角色':'My role','解決痛點與技術架構':'Problem & technical approach','研究計畫研擬':'Research proposal','GitHub 原始碼':'GitHub source code','GitHub 個人頁':'GitHub profile','關閉預覽':'Close preview','播放／簡報':'Video / Slides','查看圖片':'View image ','作品圖片':' project image','作品預覽':'Project preview','操作示範':' walkthrough','企劃簡報':' presentation','訪談影片':' interview video','影片':'video','預覽簡報':'View slides','播放預覽':'Play preview','查看作品':'View project','預覽':'Preview',
+ '查看完整作品':'View full project','開啟原始影片':'Open original video',' · 如外部平台無法載入，可使用下方原始連結。':' · If the embed is unavailable, use the original link below.',
+ '從原型到實際應用，持續迭代。':'From prototype to practice.','公開網站與原型可由各卡片前往；企業專案及研究計畫以可公開的作品資料說明。':'Explore websites and prototypes through the project cards. Enterprise work and research are described using shareable materials.',
+ '閱讀開發報告':'Read development report','閱讀完整計畫':'Read full proposal','閱讀研究報告':'Read research report','閱讀研究提案':'Read research proposal','閱讀提案簡報':'View proposal slides','瀏覽網站':'Visit website','瀏覽系所網站':'Visit department website','體驗 Figma 原型':'Try Figma prototype','觀看完整影片':'Watch full video','查看主辦作品頁':'View organizer’s page','前往 LINE VOOM 觀看':'Watch on LINE VOOM','觀看作品影片':'Watch project video','查看設計選集':'View design collection','觀看動畫播放清單':'Watch motion playlist',
+ '花蓮與地方創生簡報':'Hualien & local revitalization slides','今天就回嘉官方帳號':'Home Chiayi official LINE account','LINE FRESH 結訓紀錄':'LINE FRESH completion record',
+ '陳昱達 Ryan Chen 的個人照片':'Portrait of Ryan Chen','Ryan 在活動現場進行分享':'Ryan presenting at an event',' — 關於陳昱達 Ryan Chen':' — About Ryan Chen',
+ '編劇':'Scriptwriting','導演':'Directing','剪輯':'Editing','提案企劃':'Proposal planning','田野調查':'Field research','數位敘事':'Digital storytelling','短影音':'Short video','文化研究':'Cultural research','國際交流':'International exchange','計畫提案':'Proposal development','深度訪談':'In-depth interviews','田野觀察':'Field observation','質性編碼':'Qualitative coding','宣傳企劃':'Campaign planning','貼紙設計':'Sticker design','視覺傳達':'Visual communication','識別設計':'Identity design','視覺編排':'Visual layout','建模縮時':'Modeling time-lapse','資訊架構':'Information architecture','教育內容':'Educational content','網站翻新':'Website redesign','內容呈現':'Content presentation','資訊組織':'Information organization','AI 文本分析':'AI text analysis','NLP 構想':'NLP concept','研究設計':'Research design','旅遊 Vlog':'Travel vlog','劇情短片':'Narrative short','動畫解說':'Animated explainer','地方短影音':'Local short video',
+};
+
+// English editorial copy, keyed by stable project ID; source links/media remain unchanged.
+const projects = {
+ 'right-way':['Right Way','Turning choice overload into the next journey.','A gamified Flutter travel prototype that recommends places through swipe interactions. It combines about 3,000 attraction records, Chinese embeddings, vector retrieval, and an LLM.','Programming & technical integration','Graduation showcase: first place & best system design','Travelers need a way to turn vague preferences into practical destination choices.','Collected and labeled attraction data, integrated vector retrieval, and built the Flutter interface. Labels covered attraction type, features, location, and audience.','Prototype; source code is on GitHub. No installation download is provided.'],
+ rag:['Multi-agent RAG','Different perspectives, shared evidence.','Contributed to a multi-role conversational MVP combining a document knowledge base, retrieval, and role-based dialogue.','AI Programming Intern','MiTAC · Prototype development & testing','A single model offers limited perspectives; responses need documentary grounding and review from multiple roles.','Worked on agent workflows, document retrieval, and testing. Used product validation, competitor research, and scenario analysis to assess feasibility. Internal documents are not disclosed.','MVP experiment; the GitHub project is AskMiao. No live demo is provided.'],
+ 'gender-web':['Northern District 1 Gender Equity Center','A clear entry point for educational resources.','Contributed to the website for the Northern District 1 Higher Education Gender Equity Center, presenting resources and announcements.','Website development',null,'Educational resources need a central, accessible information hub.',null,'The linked website is maintained by its current administrators.'],
+ 'speech-web':['Shih Hsin Speech Communication Website','Organizing a department’s public-facing communication.','Participated in refreshing the website of Shih Hsin’s Department of Speech Communication and Social Media.','Department website redesign',null,'Department information needs clearer page layouts and browsing paths.',null,'Links to the current department website; the portfolio does not specify a full technology stack or source repository.'],
+ fitness:['Fitness, with empathy.','From interview findings to an interactive experience.','Used qualitative interviews to understand fitness users’ needs and pain points, then translated findings into interface flows and a Figma prototype.','User research & interface design','User research × Interactive prototype','Fitness users’ needs and usability issues must be clarified before interface design.','Used interview analysis to inform UX decisions and explored information architecture and interaction flows in Figma.','UX prototype, not an installable app. Watch the walkthrough or open Figma.'],
+ pedestrian:['Pedestrian Safety & Media Narratives',null,'Developed a research proposal combining AI text analysis and data mining to examine relationships between media narratives, public perceptions, and policy responses.','Research proposal development','NSTC proposal · Not funded','The influence of media narratives on traffic-safety perceptions requires systematic data and methods.',null,'An unsuccessful research proposal, retained for methodological reflection—not validated research findings.'],
+ trust:['Trust Game','The tension of a trailer. A story about trust.','Created a movie-trailer-style short to explain how financial trusts work, translating an abstract topic into a visual narrative.','Scriptwriting / Directing / Editing','Trust Awards · Second place / Silver award'],
+ yes:['Yes! Life','Small people can achieve great things.','Created a World Masters Games-themed advertisement, contributing proposal development and editing within a limited production schedule.','Proposal planning / Editing','New Taipei Advertising Competition · National top 12'],
+ line:['LINE FRESH · Local Revitalization','Fieldwork that brings local stories into view.','Visited communities and businesses in Chiayi and Hualien. Combined interviews, planning, filming, and editing with LINE official-account interactions to tell local brand stories.','Field research / Planning / Filming / Editing','Chiayi × Hualien · Local business digital transformation'],
+ maori:['Cultural Exchange · New Zealand','Making cultural preservation a participatory learning experience.','Selected for Taiwan’s overseas youth initiative. Visited Māori cultural sites and explored a proposed digital platform for Taiwan’s Indigenous cultures, smart guides, and community co-creation.','Proposal development / Cultural fieldwork','Selected for the overseas youth initiative',null,null,'International fieldwork and platform planning; the digital platform is not a launched product.'],
+ temple:['Jingmei Jiying Temple Research','Understanding cultural change through local voices.','Led a team combining literature review, field observation, and interviews to study temple history, architecture, and cultural transmission, with a filmed research record.','Team leadership / Interviews / Qualitative analysis','7 experienced guides interviewed · Transcription & open coding'],
+ '96minutes':['96 Minutes · Promotional Design','Film scenes translated into everyday visual objects.','Developed promotional sticker concepts during a film internship, drawing on the film’s bomb-disposal, chase, and escape scenes.','Promotional sticker concept & design','Film promotional sticker series'],
+ blender:['Campfire Clash','A story frozen at the moment of conflict.','Built a Blender scene in which a knight encounters a beast in a forest, combining characters, environment, materials, and lighting.','Blender environments / Characters / Materials / Lighting','Self-directed learning · Scene & character modeling'],
+ graphic:['Graphic Design Collection',null,'Explorations in logos, stickers, desktop backgrounds, and graduation publications, combining images, typography, and color.','Graphic design'],
+ motion:['After Effects Motion Studies',null,'Self-directed animation exercises in After Effects, applying motion-design techniques to video editing.','Motion design'],
+ wolf:['Monster Head · Modeling Process',null,'Modeled a creature’s head using reference overlays, materials, and glowing eyes, recording the modeling process.','3D modeling & process documentation'],
+};
+const shortNames=['Abandoned Greenhouse','Fuzhang Timber','Supiido','Fusion Coffee'];
+shortNames.forEach((name,i)=>projects['line-film-'+i]=[name,null,'A LINE FRESH short introducing a Chiayi business and its local story through field visits and video production.','Team video planning & production','Digital storytelling for local brands']);
+const filmNames=['Yilan Stay · Travel Vlog','Broccoli','An Introduction to Esports','Error 404'];
+const filmDesc=['A three-day trip and accommodation experience in Yilan, edited into an everyday travel narrative.','A humorous short built around simple dialogue and unusual character interactions.','An animated introduction to the origins and formats of esports, exploring information design and pacing.','A roughly ten-minute student narrative short; my first directing experience, developing storytelling and on-set collaboration.'];
+filmNames.forEach((name,i)=>projects['film-'+i]=[name,null,filmDesc[i],i===3?'Director':'Video production','Self-directed / Coursework']);
+const fields=['title','subtitle','description','role','result','pain','detail','note'];
+for(const source of [...mediaWorks,...techWorks]) {
+ const values=projects[source.id]; if(!values)continue;
+ fields.forEach((key,i)=>{if(source[key]&&values[i])dictionary[source[key]]=values[i];});
+}
+const flows={
+ 'right-way':['About 3,000 attraction records','Labels & Chinese embeddings','Vector retrieval + LLM','Flutter swipe recommendations'],
+ rag:['Document knowledge base','RAG retrieval','Multi-role agent collaboration','Response integration & testing'],
+ 'gender-web':['Content organization','Pages & navigation','Google Sites development'],
+ 'speech-web':['Content audit','Page updates','Information presentation'],
+ fitness:['Qualitative interviews','Pain-point analysis','Interface flows','Figma interactive prototype'],
+ pedestrian:['Research questions','Literature review','Text-analysis methodology','Feasibility reflection'],
+};
+for(const source of techWorks)source.flow?.forEach((text,i)=>{dictionary[text]=flows[source.id][i];});
+const jobDescriptions=[
+ 'Contributed to developing and testing a multi-agent RAG conversational MVP and AI proofs of concept. Used functional testing, competitor research, and scenario analysis to assess feasibility and suggest improvements.',
+ 'Conducted fieldwork, business interviews, and video planning in Chiayi and Hualien. Collaborated on filming and editing, connecting local stories with LINE official accounts.',
+ 'Developed film-inspired promotional stickers, translating narrative elements into visual material during a film-marketing internship.',
+];
+experience.slice(0,3).forEach((row,i)=>dictionary[row[3]]=jobDescriptions[i]);
+Object.assign(dictionary, positioning);

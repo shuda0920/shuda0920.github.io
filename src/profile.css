@@ -1,0 +1,3 @@
+/* Compatibility entry; the main build imports styles/ directly. */
+@import "./styles/credentials.css";
+@import "./styles/navigation.css";

@@ -1,0 +1,31 @@
+node_modules/
+test-results/
+.preview/
+.env
+.env.*
+!.env.example
+
+# Raw PDF extractions may contain personal identifiers.
+# Only reviewed, website-used portfolio images can be published.
+assets/portfolio/*
+!assets/portfolio/ryan.jpg
+!assets/portfolio/p2-0.png
+!assets/portfolio/p2-1.png
+!assets/portfolio/p2-2.png
+!assets/portfolio/p2-3.png
+!assets/portfolio/p3-1.png
+!assets/portfolio/p3-2.jpg
+!assets/portfolio/p4-0.png
+!assets/portfolio/p4-1.png
+!assets/portfolio/p4-2.png
+!assets/portfolio/p4-3.png
+!assets/portfolio/p7-2.png
+!assets/portfolio/p7-3.png
+!assets/portfolio/p16-0.png
+!assets/portfolio/p16-1.png
+!assets/portfolio/p17-0.png
+!assets/portfolio/p17-1.png
+!assets/portfolio/p17-2.png
+!assets/portfolio/p17-3.png
+!assets/portfolio/p17-6.png
+!assets/portfolio/p17-7.png

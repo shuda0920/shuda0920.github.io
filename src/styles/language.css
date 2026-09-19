@@ -1,0 +1,33 @@
+/* Three skill pillars and longer English copy. */
+.skill-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.skill-grid .skill { padding: 30px 24px; border: 0; border-right: 1px solid var(--line); }
+.skill-grid .skill:first-child { padding-left: 0; }
+.skill-grid .skill:last-child { border-right: 0; padding-right: 0; }
+.skill-grid .skill p { font-size: 14px; }
+.language-switch { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; border: 1px solid var(--line); border-radius: 50%; font: 13px Arial,sans-serif; flex-shrink: 0; }
+.language-switch:hover { background: var(--wine); color: var(--paper); }
+html[lang=en] .hero-name p { font-size: clamp(16px, 1.8vw, 23px); max-width: 350px; }
+html[lang=en] .intro h2 { font-size: clamp(28px, 3vw, 40px); }
+html[lang=en] .section-title h2 { letter-spacing: -.03em; }
+html[lang=en] .work-copy h2 { font-size: 25px; overflow-wrap: anywhere; }
+html[lang=en] .work-copy .role { flex-wrap: wrap; }
+html[lang=en] .island-links a { white-space: normal; font-size: 13px; }
+html[lang=en] .masthead nav { gap: 22px; }
+.project-github { margin-left: 16px; }
+@media(max-width:1050px) {
+  .masthead { gap: 12px; }
+  html[lang=en] .masthead nav { gap: 12px; }
+  html[lang=en] .masthead nav a { font-size: 12px; }
+}
+@media(max-width:700px) {
+  .skill-grid { grid-template-columns: 1fr; }
+  .skill-grid .skill, .skill-grid .skill:first-child, .skill-grid .skill:last-child { padding: 24px 0; border: 0; border-bottom: 1px solid var(--line); }
+  .skill-grid .skill:last-child { border-bottom: 0; }
+  .language-switch { min-width: 38px; min-height: 38px; }
+  .masthead { gap: 8px; padding-inline: 16px; }
+  html[lang=en] .masthead nav a { font-size: 16px; }
+  html[lang=en] .hero-name p { font-size: 14px; }
+  html[lang=en] .section-title h2 { font-size: 26px; }
+  html[lang=en] .work-intro h2 { font-size: 22px; }
+  .project-github { margin-left: 0; margin-right: 16px; }
+}
