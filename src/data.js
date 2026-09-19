@@ -20,7 +20,6 @@ export const archive = [
  ['電競遊戲介紹','動畫解說','assets/img/店競技.png','https://www.youtube.com/watch?v=CzO935-kiLg'],
  ['Error 404','劇情短片','assets/img/傳技.png','https://www.youtube.com/watch?v=_E63GVTv7M0'],
  ['平面設計選集','識別與視覺','assets/平面設計/food.png','https://docs.google.com/document/d/15IeOxTL_3UaiiNRFokHsx1m6liKFwoHH6w-eL234xlo/edit'],
- ['Motion studies','After Effects','assets/平面設計/gg.png','https://www.youtube.com/playlist?list=PL_0qWfpKfzmudrw-t1XQ0Lr9Vd5PuGbZC']
 ];
 export const timeline = [
  ['2026 — 2028 EXPECTED','國立臺灣科技大學','數位學習與教育研究所 · 碩士班','研究興趣為 AI 輔助學習、使用者體驗與文化數位教育。希望從學習者的真實困難出發，探索個人化回饋與多模態學習分析。'],

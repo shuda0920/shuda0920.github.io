@@ -51,7 +51,6 @@ const projects = {
  '96minutes':['96 Minutes · Promotional Design','Film scenes translated into everyday visual objects.','Developed promotional sticker concepts during a film internship, drawing on the film’s bomb-disposal, chase, and escape scenes.','Promotional sticker concept & design','Film promotional sticker series'],
  blender:['Campfire Clash','A story frozen at the moment of conflict.','Built a Blender scene in which a knight encounters a beast in a forest, combining characters, environment, materials, and lighting.','Blender environments / Characters / Materials / Lighting','Self-directed learning · Scene & character modeling'],
  graphic:['Graphic Design Collection',null,'Explorations in logos, stickers, desktop backgrounds, and graduation publications, combining images, typography, and color.','Graphic design'],
- motion:['After Effects Motion Studies',null,'Self-directed animation exercises in After Effects, applying motion-design techniques to video editing.','Motion design'],
  wolf:['Monster Head · Modeling Process',null,'Modeled a creature’s head using reference overlays, materials, and glowing eyes, recording the modeling process.','3D modeling & process documentation'],
 };
 const shortNames=['Abandoned Greenhouse','Fuzhang Timber','Supiido','Fusion Coffee'];
